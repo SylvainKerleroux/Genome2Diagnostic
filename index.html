@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Genome2Diagnostic</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/file-drag.css" />
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <!--banner-->
+  <section id="banner" class="banner">
+    <div class="bg-color">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="col-md-12">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-responsive" style="width: 200px; margin-top: -10px;"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#banner">Home</a></li>
+                <li class=""><a href="#upload">Upload</a></li>
+                <li class=""><a href="#contribute">Contribute</a></li>
+                <li class=""><a href="#about">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="banner-info">
+            <div class="banner-logo text-center">
+              <img src="img/logo-big.png" class="img-responsive">
+            </div>
+            <div class="banner-text text-center">
+              <h1 class="white">Discover your Genomic risk factors, for free !</h1>
+              <p>Upload your genomic snippet in .csv and compare it to our database of known genomic risk factors.</p>
+              <a href="#upload" class="btn btn-appoint text-center">Upload</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ banner-->
+  <!--upload-->
+  <section id="upload" class="section-padding">
+    <div class="container"> 
+     <form id="upload-form" action="result.php" method="POST" enctype="multipart/form-data" align="center">
+        <div id="filedrag">
+          <img id="upload-logo" src="img/upload.png" class="img-responsive" style="width: 200px; margin-top: -16px;">
+          Drop your snippet here !
+        </div>
+        <div id=upload-buttons>
+          <input type="file" id="fileselect" name="fileToUpload" class="btn btn-primary btn-block" accept=".csv, application/vnd.ms-excel"/>
+          <input id="submitbutton" type="submit" class="btn btn-success btn-lg btn-block"></button>
+        </div>
+       </div>
+    </form>
+    </div>
+    <div id="result"></div>
+  </section>
+  <!--/ upload-->
+  <!--footer-->
+  <footer id="footer">
+    <div class="footer-line">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            © Copyright Sylvain Kerleroux. All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--/ footer-->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+  <script src="js/upload.js"></script>
+
+</body>
+
+</html>
